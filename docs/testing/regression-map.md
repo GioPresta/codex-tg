@@ -298,7 +298,8 @@ Contract notes:
   active turn.
 - When a direct resume is rejected because Codex desktop already owns the
   thread, the bridge forwards normal input through the local Codex app tools
-  pipe with DeepSeek V4.1 Flash and reads progress from that same pipe.
+  pipe with DeepSeek V4.1 Flash on the Command Code route
+  (`commandcode/deepseek-v4.1-flash`) and reads progress from that same pipe.
 - Desktop-owned hot polling must prefer the app tools pipe and must not wait for
   a competing App Server read on every tick.
 - Terminal Telegram turns are unsubscribed once per turn. Binding a different

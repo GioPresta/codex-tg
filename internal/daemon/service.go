@@ -103,7 +103,7 @@ const (
 	observerRecentThreadLimit = 50
 	collaborationModeDefault  = "default"
 	collaborationModePlan     = "plan"
-	telegramForcedModel       = "deepseek/deepseek-v4.1-flash"
+	telegramForcedModel       = "commandcode/deepseek-v4.1-flash"
 	codexModelStateKey        = "codex.model"
 	codexReasoningStateKey    = "codex.reasoning_effort"
 	threadReleasedStatePrefix = "thread_ownership.released."

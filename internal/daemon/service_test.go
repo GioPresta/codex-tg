@@ -3302,7 +3302,7 @@ func TestTelegramTurnLifecycleLogsSuccessfulStart(t *testing.T) {
 	requireLogContains(t, got, `"method":"TurnStart"`)
 	requireLogContains(t, got, `"event":"telegram_origin_turn_marked"`)
 	requireLogContains(t, got, `"collaboration_mode":"plan"`)
-	requireLogContains(t, got, `"model":"deepseek/deepseek-v4.1-flash"`)
+	requireLogContains(t, got, `"model":"`+telegramForcedModel+`"`)
 	requireLogContains(t, got, `"text_len":24`)
 	requireLogContains(t, got, `"text_sha256"`)
 	if strings.Contains(got, "keep this prompt private") {

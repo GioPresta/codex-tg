@@ -52,7 +52,7 @@ func TestSendMessageToThreadUsesDesktopPipe(t *testing.T) {
 		context.Background(),
 		"thread-1",
 		"Continue the work",
-		"deepseek/deepseek-v4.1-flash",
+		"commandcode/deepseek-v4.1-flash",
 		"low",
 	)
 	if err != nil {
@@ -67,7 +67,7 @@ func TestSendMessageToThreadUsesDesktopPipe(t *testing.T) {
 		t.Fatalf("tool = %v, want send_message_to_thread", got)
 	}
 	arguments, _ := params["arguments"].(map[string]any)
-	if got := arguments["model"]; got != "deepseek/deepseek-v4.1-flash" {
+	if got := arguments["model"]; got != "commandcode/deepseek-v4.1-flash" {
 		t.Fatalf("model = %v, want Flash", got)
 	}
 	if got := arguments["thinking"]; got != "low" {

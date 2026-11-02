@@ -16,6 +16,7 @@ The settings are operator preferences for future Telegram-started collaboration-
 - `/effort` opens a button menu for reasoning effort. When a selected model advertises supported reasoning efforts, the menu is narrowed to that model.
 - Selecting a model or reasoning effort persists the value in SQLite daemon state.
 - Selecting `Auto` clears the explicit value and lets App Server defaults or discovered defaults apply.
+- Telegram collaboration turns use the Command Code route for DeepSeek V4.1 Flash (`commandcode/deepseek-v4.1-flash`). The direct `deepseek/...` alias is a separate provider and must not be used implicitly.
 - After a selection, the menu message is edited into a compact settings summary without inline choice buttons. The operator can reopen menus with `/settings`, `/model`, or `/effort`.
 - These settings are not public env configuration and must not introduce local-only secrets or private identifiers into docs or commits.
 
